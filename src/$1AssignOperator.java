@@ -1,4 +1,6 @@
 /**
+ * Created on 3 Jan 2021
+ *
  * 1. Value being transmitted should be final
  * 2. If values are same, return directly.
  * 3. Return 'this' to be assigned continuously.
@@ -14,7 +16,7 @@ public class $1AssignOperator {
 
         public MyString assignedBy(final MyString myString) {
             if (this.str.equals(myString.str) || this == myString) return this;
-            this.str = myString.str;
+            else this.str = myString.str;
             return this;
         }
 
